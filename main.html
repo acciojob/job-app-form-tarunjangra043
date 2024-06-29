@@ -1,54 +1,68 @@
-<html>
-  <head>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+<!DOCTYPE html>
 
-  <body>
-    <form method="POST" action="#">
-      <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-      </div>
-      <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-      </div>
-      <div>
-        <label for="gender_male">Gender:</label>
-        <input type="radio" id="gender_male" name="gender" value="male" required />
-        <label for="gender_male">Male</label>
-        <input type="radio" id="gender_female" name="gender" value="female" required />
-        <label for="gender_female">Female</label>
-        <input type="radio" id="gender_other" name="gender" value="other" required />
-      </div>
-      <div>
-        <label for="laptop">Laptop Brands:</label>
-        <select id="laptop" name="laptop">
-          <option value="apple">Apple</option>
-          <option value="asus">Asus</option>
-          <option value="hp">HP</option>
-        </select>
-      </div>
-      <div>
-        <label for="age">Age:</label>
-        <input type="number" id="age" name="age" required />
-      </div>
-      <div>
-        <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" name="dob" required />
-      </div>
-      <div>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required />
-      </div>
-      <div>
-        <label for="portfolio">Portfolio URL:</label>
-        <input type="url" id="portfolio" name="portfolio" required />
-      </div>
-      <div>
-        <button type="submit">Submit</button>
-      </div>
-    </form>
-    <script type="text/javascript" src="./script.js"></script>
-  </body>
+<html>
+
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<!-- the entire body must be written by student -->
+    <script type="text/javascript" src="./script.js">
+</script>
+<Form method="post">
+ <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>
+    <br>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+    <br>
+    <div>
+      <label>Gender:</label><br>
+      <input type="radio" id="gender_m" name="gender" value="male" required>
+      <label for="gender_m">Male</label><br>
+      <input type="radio" id="gender_f" name="gender" value="female" required>
+      <label for="gender_f">Female</label>
+    </div>
+    <br>
+    <div>
+      <label for="laptop">Laptop Brands:</label>
+      <select id="laptop" name="laptop_brands" required>
+        <option value="" disabled selected>--Please choose an option--</option>
+        <option value="apple">Apple</option>
+        <option value="asus">Asus</option>
+        <option value="hp">HP</option>
+      </select>
+    </div>
+    <br>
+    <div>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" placeholder="Age" required>
+    </div>
+    <br>
+    <div>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+    </div>
+    <br>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <br>
+    <div>
+      <label for="portfolio">Portfolio URL:</label>
+      <input type="url" id="portfolio" name="portfolio_url" required>
+    </div>
+    <br>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+	</Form>
+</body>
+
 </html>
